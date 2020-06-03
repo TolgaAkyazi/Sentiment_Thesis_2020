@@ -3,8 +3,8 @@ import pandas as pd
 import pickle
 import os
 ## load in all the necessary data ## Set the files accordingly to your own directories ##
-directory_pos = 'C:/Users/tolga/Desktop/Final Project/Final Scripts/Resource Files/Sentiment Resources/pos'
-directory_neg = 'C:/Users/tolga/Desktop/Final Project/Final Scripts/Resource Files/Sentiment Resources/neg'
+directory_pos = '/Resource Files/Sentiment Resources/pos'
+directory_neg = '/Resource Files/Sentiment Resources/neg'
 
 import os
 pos_list = []
@@ -71,15 +71,15 @@ Log_Reg.fit(X_train,y_train)
 ### With our last script we made pickled test and training files ###
 
 ## load in pickled data to make sentiment predictions ##
-test_data_tfidf = np.load('C:/Users/tolga/Desktop/Final Project/Final Scripts/pickles/testset_tfidf_vector.pickle', allow_pickle = True)
-train_data_tfidf_negative = np.load('C:/Users/tolga/Desktop/Final Project/Final Scripts/pickles/trainset_tfidf_vector.pickle', allow_pickle = True)
-test_data_cleaned_transcripts = np.load('C:/Users/tolga/Desktop/Final Project/Final Scripts/pickles/transcripts_cleaned_test.pickle', allow_pickle = True)
-train_data_cleaned_transcripts = np.load('C:/Users/tolga/Desktop/Final Project/Final Scripts/pickles/transcripts_cleaned_train.pickle', allow_pickle = True)
+test_data_tfidf = np.load('/pickles/testset_tfidf_vector.pickle', allow_pickle = True)
+train_data_tfidf_negative = np.load('/pickles/trainset_tfidf_vector.pickle', allow_pickle = True)
+test_data_cleaned_transcripts = np.load('/pickles/transcripts_cleaned_test.pickle', allow_pickle = True)
+train_data_cleaned_transcripts = np.load('/pickles/transcripts_cleaned_train.pickle', allow_pickle = True)
 #########      predictions on training data     ########
 y_pred_train = Log_Reg.predict(train_data_tfidf_negative)
 
 ## filepath of: which folder the pickled data should be stored
-pickle_filepath = 'C:\\Users\\tolga\\Desktop\\Final Project\\Final Scripts\\pickles'
+pickle_filepath = '\\Final Scripts\\pickles'
 # pickle the predictions on training data #
 os.chdir(pickle_filepath)
 with open('predicted.pickle', 'wb') as f:
