@@ -11,13 +11,13 @@ import sys
 
 ## load in all the necessary data ## Set the files accordingly to your own directories ##
 ## filepath of: transcripts of ~50 videos we watched ourselves
-ourwatched_set_filepath = 'C:/Users/tolga/Desktop/Final Project/Final Scripts/Resource Files/Baseline Resources'
+ourwatched_set_filepath = '/Baseline Resources'
 ## filepath of: which folder the pickled data should be stored
-pickle_filepath = 'C:/Users/tolga/Desktop/Final Project/Final Scripts/pickles'
+pickle_filepath = '/pickles'
 ## filepath of: labels of transcripts from ~480 videos (Alfano, et al.)
-dataset_filepath = 'C:/Users/tolga/Desktop/Final Project/Final Scripts/Resource Files/Baseline Resources'
+dataset_filepath = '/Baseline Resources'
 ## filepath of: transcripts from ~480 videos from (Alfano, et al.)
-transcript_filepath = 'C:/Users/tolga/Desktop/Final Project/Final Scripts/Resource Files/Baseline Resources'
+transcript_filepath = '/Baseline Resources'
 
 ## shuffle datasets ##
 ## The training and test data both consist of the shape ([transcript, conspiracy rating]) ##
