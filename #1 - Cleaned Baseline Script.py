@@ -5,6 +5,10 @@ import os
 import json
 import sys
 
+### TO RUN FILES, THE FILEPATHS SHOULD BE SET TO YOUR PERSONAL DIRECTORIES ###
+### IM NO PYTHON EXPERT, SORRY ##
+
+
 ## load in all the necessary data ## Set the files accordingly to your own directories ##
 ## filepath of: transcripts of ~50 videos we watched ourselves
 ourwatched_set_filepath = 'C:/Users/tolga/Desktop/Final Project/Final Scripts/Resource Files/Baseline Resources'
