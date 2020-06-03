@@ -79,7 +79,7 @@ train_data_cleaned_transcripts = np.load('C:/Users/tolga/Desktop/Final Project/F
 y_pred_train = Log_Reg.predict(train_data_tfidf_negative)
 
 ## filepath of: which folder the pickled data should be stored
-pickle_filepath = 'C:/Users/tolga/Desktop/SCRIPTS AND SHI/Important Scripts/Final Scripts/pickles'
+pickle_filepath = 'C:\\Users\\tolga\\Desktop\\Final Project\\Final Scripts\\pickles'
 # pickle the predictions on training data #
 os.chdir(pickle_filepath)
 with open('predicted.pickle', 'wb') as f:
