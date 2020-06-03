@@ -5,7 +5,7 @@ import os
 
 
 ## load in pickled predictions from negative sentiment script ##
-y_pred_train = np.load('C:/Users/tolga/Desktop/SCRIPTS AND SHI/Important Scripts/Final Scripts/pickles/predicted.pickle', allow_pickle = True)
+y_pred_train = np.load('C:\\Users\\tolga\\Desktop\\Final Project\\Final Scripts\\pickles\\predicted.pickle', allow_pickle = True)
 ## load in pickled data to make sentiment predictions ##
 test_data_tfidf = np.load('C:/Users/tolga/Desktop/Final Project/Final Scripts/pickles/testset_tfidf_vector.pickle', allow_pickle = True)
 train_data_tfidf_positive = np.load('C:/Users/tolga/Desktop/Final Project/Final Scripts/pickles/trainset_tfidf_vector.pickle', allow_pickle = True)
