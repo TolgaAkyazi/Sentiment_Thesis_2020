@@ -5,8 +5,6 @@ import os
 import json
 import sys
 
-###pycharm being a dick
-
 ###sys.path.insert(0,'C:/Users/tolga/Desktop/Final Project/Final Scripts')
 
 #######################
